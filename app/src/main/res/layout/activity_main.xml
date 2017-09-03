@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/alarm_clock_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#40aff2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/more_alarm_clock_tv"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_timeline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="@string/timeline"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/alarm_clock_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarm_clock_rl"
+        android:orientation="vertical">
+
+        <ExpandableListView
+            android:id="@+id/alarm_clock_expandablelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:childDivider="#c8c7cc"
+            android:divider="@null"
+            android:dividerHeight="1dp"
+            android:gravity="center"
+            android:listSelector="#ffffff"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</RelativeLayout>

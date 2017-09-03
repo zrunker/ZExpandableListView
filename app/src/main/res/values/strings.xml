@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ZExpandableListView</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="more_alarm_clock_tv">闹钟列表</string>
+    <string name="back">返回</string>
+    <string name="timeline">时间轴</string>
+</resources>
